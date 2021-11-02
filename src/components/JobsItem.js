@@ -1,15 +1,15 @@
 import React from 'react'
 
-function JobsItem({item}) {
+function JobsItem(item) {
+  const jobs = item;
   return (
     <li>
-      <span>
-        <a href={item.url}>{ item.title }</a>
-      </span>
-      <span> { item.company } </span>
-      <span> <strong>{ item.position } </strong></span>
-      <span> { item.date } </span>
-      <span> { item.jobOffer } </span>
+      <span>{jobs.title}</span>
+      <span><a href={jobs.url}>{jobs.title}</a></span>
+      <span>{jobs.company}</span>
+      <span>{jobs.position}</span>
+      <span>{jobs.date}</span>
+      <span>{jobs.jobOffer}</span>
     </li>
   )
 }
