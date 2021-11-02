@@ -1,4 +1,5 @@
 import React from 'react'
+import JobsItem from './components/JobsItem';
 
 const jobsList = [ 
   {
@@ -22,12 +23,12 @@ const jobsList = [
   }
 ]
 
-function JobsList({jobsList}) {
+function JobsList({jobs}) {
   return (
     <div>
       <ul>
         {jobsList.map((item) => (
-          <li key={item.jobID} item={item} />
+          <JobsItem key={item.jobID} item={jobs} />
         ))}
       </ul>
     </div>

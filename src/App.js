@@ -1,17 +1,15 @@
-import React from 'react';
+import { useState } from 'react';
+import JobsList from './JobsList';
 import JobsSearch from './components/JobsSearch';
 
 const App = () => {
+  const [newJobsSearch, setNewJobsSaerch] = useState('');
+  
   return(
-    <div className="app">
-      <h1>Job Search</h1>
-      <label htmlFor="search">Search: </label>
-      <input id="search" type="text" />
-      
-      <hr />
-      
-      <JobsSearch />
-      
+    <div>
+      <h1 style={{color: "blue"}}>Job Search</h1>
+      <JobsSearch onStartSearch={setNewJobsSaerch} newJobsSearch={ newJobsSearch }/>
+      <JobsList />
    </div>
   );
 }
