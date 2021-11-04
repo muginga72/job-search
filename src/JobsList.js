@@ -23,12 +23,12 @@ const jobsList = [
   }
 ]
 
-function JobsList({jobs}) {
+function JobsList(props) {
   return (
     <div>
       <ul>
-        {jobsList.map((item) => (
-          <JobsItem key={item.jobID} item={jobs} />
+        {jobsList.map(item => (
+          <JobsItem key={item.jobID} jobs={item} />
         ))}
       </ul>
     </div>
