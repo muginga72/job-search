@@ -12,11 +12,11 @@ function JobsSearch(props) {
   return (
     <form onSubmit={handleStartSearch}>
       <div>
-        <label htmlFor="search">Search: </label>
+        <label htmlFor="jobSearch">Search: </label>
         <input
-          jobID="jobSearch"
-          name="title"
           type="text"
+          jobID="jobSearch"
+          name="title" required
           placeholder="Searching"
           value={jobsSearch}
           onChange={e => setJobsSearch(e.target.value)}
@@ -29,4 +29,3 @@ function JobsSearch(props) {
 }
 
 export default JobsSearch;
-
