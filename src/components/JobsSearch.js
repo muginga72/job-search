@@ -17,7 +17,7 @@ function JobsSearch(props) {
           type="text"
           jobID="jobSearch"
           name="title" required
-          placeholder="Searching"
+          placeholder="searching"
           value={jobsSearch}
           onChange={e => setJobsSearch(e.target.value)}
         />

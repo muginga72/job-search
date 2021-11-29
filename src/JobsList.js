@@ -20,6 +20,16 @@ const jobsList = [
     position: "Softwares Eng.",
     date:"9/23/2021",
     jobOffer: "No",
+  },
+
+  {
+    jobID: 1103,
+    title: "React Developer",
+    url: "https://varizon.com/jobs/",
+    company: "Varizon",
+    position: "Softwares Developer",
+    date:"9/23/2021",
+    jobOffer: "No",
   }
 ]
 
